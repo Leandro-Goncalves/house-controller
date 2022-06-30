@@ -1,5 +1,5 @@
 import Axios from "axios";
 
-const Api = Axios.create({ baseURL: "https://esp8266control.herokuapp.com/" });
+const Api = Axios.create({ baseURL: process.env.NEXT_PUBLIC_API_URL });
 
 export default Api;
